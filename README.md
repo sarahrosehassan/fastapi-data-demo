@@ -47,7 +47,7 @@ Before starting, ensure you have the following installed:
     ```bash
     pip install -r requirements.txt
     ```
-    *(Note: Your `requirements.txt` includes: `fastapi`, `uvicorn`, `pandas`, `pydantic`)*
+    *(Note: `requirements.txt` includes: `fastapi`, `uvicorn`, `pandas`, `pydantic`)*
 
  ## 3. Tutorial Walkthrough
 
