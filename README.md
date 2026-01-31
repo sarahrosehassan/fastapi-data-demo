@@ -25,13 +25,23 @@ Before starting, ensure you have the following installed:
     ```
 
 2.  **Create a Virtual Environment**
+    *This creates an isolated "sandbox" for our project so our tools don't conflict with other projects on your computer.*
+
+    **A. Build the Environment (Run once)**
     ```bash
+    # Windows/Mac/Linux
     python -m venv venv
+    ```
+
+    **B. Turn the Environment ON (Run every time you open a terminal)**
+    ```bash
     # Windows:
     .\venv\Scripts\activate
+
     # Mac/Linux:
     source venv/bin/activate
     ```
+    *(Tip: You will know it worked if you see `(venv)` appear at the start of your terminal line!)*
 
 3.  **Install Dependencies**
     ```bash
