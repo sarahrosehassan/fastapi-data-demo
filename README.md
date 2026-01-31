@@ -1,5 +1,5 @@
 # 🚀 Building a Data-Driven Backend API with FastAPI
-**CPS 730 Technical Demo | Group [Your Group Number]**
+**CPS 730 Technical Demo | Group 6**
 *A hands-on guide to building a modern, high-performance REST API using Python, FastAPI, and Pandas.*
 
  ## 1. Overview
