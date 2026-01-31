@@ -20,7 +20,7 @@ Before starting, ensure you have the following installed:
 ### Installation
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/your-username/fastapi-data-demo.git](https://github.com/your-username/fastapi-data-demo.git)
+    git clone https://github.com/sarahrosehassan/fastapi-data-demo.git
     cd fastapi-data-demo
     ```
 
