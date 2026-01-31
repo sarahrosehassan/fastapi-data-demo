@@ -1,0 +1,10 @@
+# --- Core Framework ---
+fastapi     # The web framework that builds the API endpoints
+uvicorn     # The "Lightning" fast server that runs the Python code
+
+# --- Data Processing ---
+pandas      # The "Excel for Python" library we use to read/filter the CSV
+pydantic    # The "Security Guard" that validates user data types
+
+# --- Utilities ---
+requests    # A helper tool if we need to test calling our own API
