@@ -15,6 +15,8 @@ except FileNotFoundError:
     df = pd.DataFrame() # Create an empty table so the app doesn't crash
 
 # --- ENDPOINTS ---
+# An "Endpoint" is a specific URL path (like /items) that triggers a specific Python function.
+# It acts as the door through which users access our data.
 
 @app.get("/")
 def read_root():
