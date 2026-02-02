@@ -1,4 +1,4 @@
-# 📱 Tech Gadgets API (Backend Demo)
+# 📱 Tech Products API (Backend Demo)
 
 ## 1. Overview
 This project demonstrates a high-performance REST API backend built with **Python**, **FastAPI**, and **Pandas**. It simulates an e-commerce inventory system where users can:
