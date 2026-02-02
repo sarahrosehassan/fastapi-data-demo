@@ -45,7 +45,7 @@ Before starting, ensure you have the following installed:
 
 3.  **Install Dependencies**
     ```bash
-    pip install -r requirements.txt
+    python -m pip install -r requirements.txt
     ```
     *(Note: `requirements.txt` includes: `fastapi`, `uvicorn`, `pandas`, `pydantic`)*
 
