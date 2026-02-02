@@ -29,8 +29,13 @@ Before starting, ensure you have the following installed:
 
     **A. Build the Environment (Run once)**
     ```bash
-    # Windows/Mac/Linux
+    # Windows
     python -m venv venv
+    ```
+
+    ```bash
+    # Mac/Linux
+    python3 -m venv venv
     ```
 
     **B. Turn the Environment ON (Run every time you open a terminal)**
