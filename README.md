@@ -1,69 +1,118 @@
-# 🚀 Building a Data-Driven Backend API with FastAPI
-**CPS 730 Technical Demo | Group 6**
-*A hands-on guide to building a modern, high-performance REST API using Python, FastAPI, and Pandas.*
+# � Tech Gadgets API (Backend Demo)
 
- ## 1. Overview
-In this tutorial, we will demonstrate how to build a scalable backend service that ingests structured data (CSV) and serves it via a fast, well-documented API. We use **FastAPI** for the web framework and **Pandas** for efficient server-side data processing.
+## 1. Overview
+This project demonstrates a high-performance REST API backend built with **Python**, **FastAPI**, and **Pandas**. It simulates an e-commerce inventory system where users can:
+* **Retrieve** a full list of tech products.
+* **Filter** products by category (e.g., "Audio", "Monitors").
+* **Lookup** specific items by their unique ID.
 
-**What you will learn:**
-- How to structure a modern Python backend project.
-- How to load and query CSV datasets efficiently using Pandas.
-- How to validate incoming data requests using Pydantic models.
-- How to handle errors and generate automatic documentation (OpenAPI/Swagger).
-  
- ## 2. Prerequisites & Setup
-Before starting, ensure you have the following installed:
-* **Python 3.9+**
-* **Docker Desktop** (Optional, for the deployment step)
-* **A sample CSV file** (We have provided `data.csv` in the repo)
+**Tech Stack:**
+* **FastAPI:** For handling HTTP requests and routing.
+* **Pandas:** For efficient in-memory data processing (simulating a database).
+* **Uvicorn:** As the ASGI server to run the application.
 
-### Installation
-1.  **Clone the Repository**
-    ```bash
-    git clone https://github.com/sarahrosehassan/fastapi-data-demo.git
-    cd fastapi-data-demo
-    ```
+---
 
-2.  **Create a Virtual Environment**
-    *This creates an isolated "sandbox" for our project so our tools don't conflict with other projects on your computer.*
+## 2. Prerequisites & Setup Instructions
 
-    **A. Build the Environment (Run once)**
-    ```bash
-    # Windows
-    python -m venv venv
-    ```
+### Prerequisites
+* **Python 3.8+** (Verify with `python3 --version`).
+* **VS Code** (Recommended IDE).
 
-    ```bash
-    # Mac/Linux
-    python3 -m venv venv
-    ```
+### Installation & Setup
 
-    **B. Turn the Environment ON (Run every time you open a terminal)**
-    ```bash
-    # Windows:
-    .\venv\Scripts\activate
+**Step 1: Prepare the Files**
+Ensure the following files are in your project folder:
+* `main.py` (Application logic)
+* `data.csv` (Data source)
+* `requirements.txt` (Dependencies)
 
-    # Mac/Linux:
-    source venv/bin/activate
-    ```
-    *(Tip: You will know it worked if you see `(venv)` appear at the start of your terminal line!)*
+**Step 2: Create Virtual Environment**
+Run the command for your operating system to create an isolated sandbox:
 
-3.  **Install Dependencies**
-    ```bash
-    python -m pip install -r requirements.txt
-    ```
-    *(Note: `requirements.txt` includes: `fastapi`, `uvicorn`, `pandas`, `pydantic`)*
+* **Mac / Linux:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
 
- ## 3. Tutorial Walkthrough
+* **Windows:**
+  ```bash
+  python -m venv venv
+  .\venv\Scripts\activate
+  ```
+(You should see `(venv)` appear at the start of your terminal line).
 
+**Step 3: Install Dependencies**
+```bash
+python -m pip install -r requirements.txt
+```
 
- ## 4. Verification & Expected Outputs
+**Step 4: Start the Server**
+```bash
+uvicorn main:app --reload
+```
+You should see: `Uvicorn running on http://127.0.0.1:8000`
 
+---
 
- ## 5. Troubleshooting (Common Issues)
+## 3. Tutorial Walkthrough
+We use the automatic Swagger UI to test the API without needing a frontend.
 
+**Step 1: Open the Interface**  
+Navigate to http://127.0.0.1:8000/docs in your browser.
 
- ## 6. Clean-up
+**Step 2: Get All Items**
+1. Click on the blue bar **GET /items**.
+2. Click **Try it out** -> **Execute**.
+3. **Result:** The API returns a JSON list of all products from `data.csv`.
 
+**Step 3: Filter by Category**
+1. In the `category` parameter field, type: `Audio`
+2. Click **Execute**.
+3. **Result:** The API returns only the "Sony Noise Cancelling Headphones".
 
- ## 7. References
+**Step 4: Lookup Specific Item**
+1. Scroll to **GET /items/{item_id}**.
+2. Click **Try it out**.
+3. Enter ID: `106` (Apple Watch).
+4. Click **Execute**.
+5. **Result:** The API returns details for the "Smart Watch Series 7".
+
+---
+
+## 4. Troubleshooting
+
+**Error: "Module not found: pandas"**
+* **Cause:** You are not inside the virtual environment.
+* **Fix:** Run `source venv/bin/activate` (Mac) or `.\venv\Scripts\activate` (Windows).
+
+**Error: "command not found: uvicorn"**
+* **Cause:** Dependencies were installed globally or not at all.
+* **Fix:** Activate the venv and run `pip install -r requirements.txt` again.
+
+**Error: "Address already in use"**
+* **Cause:** Another instance of the server is running.
+* **Fix:** Close other terminal windows or change the port: `uvicorn main:app --reload --port 8001`.
+
+---
+
+## 5. Clean-up
+To properly close the project when finished:
+
+1. **Stop the Server:** Go to your terminal and press `Ctrl + C`.
+
+2. **Exit the Environment:** Type the following command to leave the virtual sandbox:
+   ```bash
+   deactivate
+   ```
+
+3. **(Optional) Delete Environment:** If you want to save space, you can delete the `venv` folder safely. It can always be recreated using the Setup Instructions.
+
+---
+
+## 6. References
+* **FastAPI Documentation:** https://fastapi.tiangolo.com/
+* **Pandas Documentation:** https://pandas.pydata.org/docs/
+* **Uvicorn Deployment:** https://www.uvicorn.org/
+* **Python venv Module:** https://docs.python.org/3/library/venv.html
