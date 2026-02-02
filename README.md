@@ -16,7 +16,9 @@ This project demonstrates a high-performance REST API backend built with **Pytho
 ## 2. Prerequisites & Setup Instructions
 
 ### Prerequisites
-* **Python 3.8+** (Verify with `python3 --version`).
+* **Python 3.8+** 
+  * **Mac / Linux:** Verify with `python3 --version`
+  * **Windows:** Verify with `python --version`
 
 ### Installation & Setup
 
