@@ -66,6 +66,9 @@ python -m pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 You should see: `Uvicorn running on http://127.0.0.1:8000`
+
+![Server Running](images/server-running.png)
+
 Visiting http://127.0.0.1:8000 will only show a raw JSON message.
 
 ---
@@ -76,15 +79,21 @@ We use the automatic Swagger UI to test the API without needing a frontend.
 **Step 1: Open the Interface**  
 Navigate to http://127.0.0.1:8000/docs in your browser.
 
+![Swagger UI Main Page](images/swagger-ui-main.png)
+
 **Step 2: Get All Items**
 1. Click on the blue bar **GET /items**.
 2. Click **Try it out** -> **Execute**.
 3. **Result:** The API returns a JSON list of all products from `data.csv`.
 
+![Get All Items Response](images/get-all-items-response.png)
+
 **Step 3: Filter by Category**
 1. In the `category` parameter field, type: `Audio`
 2. Click **Execute**.
 3. **Result:** The API returns only the "Sony Noise Cancelling Headphones".
+
+![Filter by Category Response](images/filter-by-category-response.png)
 
 **Step 4: Lookup Specific Item**
 1. Scroll to **GET /items/{item_id}**.
@@ -92,6 +101,8 @@ Navigate to http://127.0.0.1:8000/docs in your browser.
 3. Enter ID: `106` (Apple Watch).
 4. Click **Execute**.
 5. **Result:** The API returns details for the "Smart Watch Series 7".
+
+![Get Item by ID Response](images/get-item-by-id-response.png)
 
 ---
 
