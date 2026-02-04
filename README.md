@@ -11,6 +11,18 @@ This project demonstrates a high-performance REST API backend built with **Pytho
 * **Pandas:** For efficient in-memory data processing (simulating a database).
 * **Uvicorn:** As the ASGI server to run the application.
 
+**What is a REST API?**
+REST (Representational State Transfer) is an architectural style for building web services. A REST API allows different applications to communicate over HTTP using standard methods (GET, POST, PUT, DELETE). In this project, we use GET requests to retrieve product data.
+
+**Why FastAPI?**
+FastAPI is a modern Python web framework that's significantly faster than alternatives like Flask or Django. It automatically generates interactive API documentation (Swagger UI), validates data types, and provides async support for high-performance applications.
+
+**What is Swagger/OpenAPI?**
+Swagger UI is an interactive documentation interface that FastAPI generates automatically. It lets you test API endpoints directly in your browser without writing any frontend code or using tools like Postman.
+
+**Role of Pandas**
+Pandas is typically used for data analysis, but here it serves as an in-memory database. It loads the CSV file and allows fast filtering and querying operations, simulating what a real database would do.
+
 ---
 
 ## 2. Prerequisites & Setup Instructions
@@ -54,8 +66,7 @@ python -m pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 You should see: `Uvicorn running on http://127.0.0.1:8000`
-
-Note: Visiting http://127.0.0.1:8000 will only show a raw JSON message.
+Visiting http://127.0.0.1:8000 will only show a raw JSON message.
 
 ---
 
