@@ -1,3 +1,4 @@
+# To customize: Keep the same column format below and add your own products!
 id,product_name,brand,price,category,stock_count
 101,Noise Cancelling Headphones,Sony,299.99,Audio,50
 102,Wireless Gaming Mouse,Logitech,59.99,Peripherals,120

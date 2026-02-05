@@ -9,7 +9,7 @@ app = FastAPI(title="Tech Gadgets API", version="1.0")
 # We load this OUTSIDE the functions so it only happens once when the server starts.
 try:
     df = pd.read_csv("data.csv")
-    print("✅ Data loaded successfully!")
+    print(f"✅ Data loaded successfully! {len(df)} products available.")
 except FileNotFoundError:
     print("❌ Error: data.csv not found!")
     df = pd.DataFrame() # Create an empty table so the app doesn't crash

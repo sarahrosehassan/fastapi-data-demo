@@ -1,5 +1,24 @@
 # 📱 Tech Products API (Backend Demo)
 
+## ⚡ Quick Start
+For experienced users who want to get started immediately:
+
+**Mac / Linux:**
+```bash
+./setup.sh  # Install everything
+./start.sh  # Start the server
+```
+
+**Windows:**
+```bash
+setup.bat  # Install everything
+start.bat  # Start the server
+```
+
+Then open http://127.0.0.1:8000/docs in your browser.
+
+---
+
 ## 1. Overview
 This project demonstrates a high-performance REST API backend built with **Python**, **FastAPI**, and **Pandas**. It simulates an e-commerce inventory system where users can:
 * **Retrieve** a full list of tech products.
@@ -11,21 +30,25 @@ This project demonstrates a high-performance REST API backend built with **Pytho
 * **Pandas:** For efficient in-memory data processing (simulating a database).
 * **Uvicorn:** As the ASGI server to run the application.
 
-**What is a REST API?**
+---
+
+## 2. Key Technologies Explained
+
+### What is a REST API?
 REST (Representational State Transfer) is an architectural style for building web services. A REST API allows different applications to communicate over HTTP using standard methods (GET, POST, PUT, DELETE). In this project, we use GET requests to retrieve product data.
 
-**Why FastAPI?**
+### Why FastAPI?
 FastAPI is a modern Python web framework that's significantly faster than alternatives like Flask or Django. It automatically generates interactive API documentation (Swagger UI), validates data types, and provides async support for high-performance applications.
 
-**What is Swagger/OpenAPI?**
+### What is Swagger/OpenAPI?
 Swagger UI is an interactive documentation interface that FastAPI generates automatically. It lets you test API endpoints directly in your browser without writing any frontend code or using tools like Postman.
 
-**Role of Pandas**
+### Role of Pandas
 Pandas is typically used for data analysis, but here it serves as an in-memory database. It loads the CSV file and allows fast filtering and querying operations, simulating what a real database would do.
 
 ---
 
-## 2. Prerequisites & Setup Instructions
+## 3. Prerequisites & Setup Instructions
 
 ### Prerequisites
 * **Python 3.8+** 
@@ -73,7 +96,7 @@ Visiting http://127.0.0.1:8000 will only show a raw JSON message.
 
 ---
 
-## 3. Tutorial Walkthrough
+## 4. Tutorial Walkthrough
 We use the automatic Swagger UI to test the API without needing a frontend.
 
 **Step 1: Open the Interface**  
@@ -106,7 +129,7 @@ Navigate to http://127.0.0.1:8000/docs in your browser.
 
 ---
 
-## 4. Troubleshooting
+## 5. Troubleshooting
 
 **Error: "Module not found: pandas"**
 * **Cause:** You are not inside the virtual environment.
@@ -122,7 +145,7 @@ Navigate to http://127.0.0.1:8000/docs in your browser.
 
 ---
 
-## 5. Clean-up
+## 6. Clean-up
 To properly close the project when finished:
 
 1. **Stop the Server:** Go to your terminal and press `Ctrl + C`.
@@ -136,7 +159,7 @@ To properly close the project when finished:
 
 ---
 
-## 6. References
+## 7. References
 * **FastAPI Documentation:** https://fastapi.tiangolo.com/
 * **Pandas Documentation:** https://pandas.pydata.org/docs/
 * **Uvicorn Deployment:** https://www.uvicorn.org/
