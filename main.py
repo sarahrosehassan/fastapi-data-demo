@@ -3,7 +3,13 @@ import pandas as pd
 from typing import Optional
 
 # 1. Initialize the App
-app = FastAPI(title="Tech Gadgets API", version="1.0")
+app = FastAPI(
+    title="Tech Gadgets API", 
+    version="1.0",
+    description="A RESTful API for managing tech product inventory - Educational Demo",
+    docs_url="/docs",  # Swagger UI endpoint
+    redoc_url="/redoc"  # Alternative documentation
+)
 
 # 2. Load the Data (Simulating a Database)
 # We load this OUTSIDE the functions so it only happens once when the server starts.
