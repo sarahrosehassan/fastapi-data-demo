@@ -29,7 +29,22 @@ This project demonstrates a high-performance REST API backend built with **Pytho
 ## 2. Key Technologies Explained
 
 ### What is a REST API?
-REST (Representational State Transfer) is an architectural style for building web services. A REST API allows different applications to communicate over HTTP using standard methods (GET, POST, PUT, DELETE). In this project, we use GET requests to retrieve product data.
+Think of a REST API like a **waiter in a restaurant**:
+- You (the customer) sit at a table and look at the menu
+- You tell the waiter what you want to order
+- The waiter takes your request to the kitchen
+- The kitchen prepares your food
+- The waiter brings it back to you
+
+In our tech world:
+- **You** = A website or mobile app
+- **The waiter** = The REST API (our FastAPI code)
+- **The kitchen** = The database (our data.csv file)
+- **The menu** = Available endpoints (actions you can request)
+
+**Simple example:** When you open Instagram and see photos, the Instagram app sends a request to Instagram's API saying "Give me the latest photos." The API fetches them from the database and sends them back. That's exactly what we're building!
+
+In this project, we use **GET requests** to retrieve product data - like asking the waiter "Can I see the appetizers menu?" instead of ordering food.
 
 ### Why FastAPI?
 FastAPI is a modern Python web framework that's significantly faster than alternatives like Flask or Django. It automatically generates interactive API documentation (Swagger UI), validates data types, and provides async support for high-performance applications.
