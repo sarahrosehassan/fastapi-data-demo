@@ -11,23 +11,6 @@ By completing this tutorial, you will:
 - ✅ Test APIs using interactive Swagger/OpenAPI documentation
 - ✅ Understand virtual environments and dependency management
 
-## ⚡ Quick Start
-For experienced users who want to get started immediately:
-
-**Mac / Linux:**
-```bash
-./setup.sh  # Install everything
-./start.sh  # Start the server
-```
-
-**Windows:**
-```bash
-setup.bat  # Install everything
-start.bat  # Start the server
-```
-
-Then open http://127.0.0.1:8000/docs in your browser.
-
 ---
 
 ## 1. Overview
