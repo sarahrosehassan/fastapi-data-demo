@@ -44,7 +44,7 @@ In our tech world:
 
 **Simple example:** When you open Instagram and see photos, the Instagram app sends a request to Instagram's API saying "Give me the latest photos." The API fetches them from the database and sends them back. That's exactly what we're building!
 
-In this project, we use **GET requests** to retrieve product data - like asking the waiter "Can I see the appetizers menu?" instead of ordering food.
+**Technical definition:** REST (Representational State Transfer) is an architectural style for building web services. A REST API allows different applications to communicate over HTTP using standard methods (GET, POST, PUT, DELETE). In this project, we use GET requests to retrieve product data.
 
 ### Why FastAPI?
 FastAPI is a modern Python web framework that's significantly faster than alternatives like Flask or Django. It automatically generates interactive API documentation (Swagger UI), validates data types, and provides async support for high-performance applications.
