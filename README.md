@@ -1,7 +1,5 @@
 # 📱 Tech Products API (Backend Demo)
 
-**Difficulty Level:** 🟢 Beginner-Friendly | **Estimated Time:** ⏱️ 15-20 minutes
-
 ## 🎯 Learning Objectives
 By completing this tutorial, you will:
 - ✅ Understand how REST APIs work and why they're important
