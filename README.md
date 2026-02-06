@@ -66,6 +66,13 @@ Pandas is typically used for data analysis, but here it serves as an in-memory d
 
 From the project root folder, run the commands below in order.
 
+**Optional convenience scripts**
+This repo includes OS-specific helper scripts:
+* **Mac / Linux:** `setup.sh` and `start.sh`
+* **Windows:** `setup.bat` and `start.bat`
+
+You only need the pair that matches your OS. The manual steps below are equivalent to running those scripts.
+
 * **Mac / Linux:**
   ```bash
   cd path/to/fastapi-data-demo
