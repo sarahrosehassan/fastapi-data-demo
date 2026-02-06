@@ -66,6 +66,18 @@ Pandas is typically used for data analysis, but here it serves as an in-memory d
 
 ### Installation & Setup
 
+From the project root folder, run the commands below in order.
+
+* **Mac / Linux:**
+  ```bash
+  cd path/to/fastapi-data-demo
+  ```
+
+* **Windows (PowerShell or Command Prompt):**
+  ```bash
+  cd path\to\fastapi-data-demo
+  ```
+
 **Step 1: Prepare the Files**
 Ensure the following files are in your project folder:
 * `main.py` (Application logic)
