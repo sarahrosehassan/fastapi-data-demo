@@ -14,7 +14,8 @@ app = FastAPI(
 # 2. Load the Data (Simulating a Database)
 # We load this OUTSIDE the functions so it only happens once when the server starts.
 try:
-    df = pd.read_csv("data.csv")
+    # Ignore the leading comment line in data.csv so headers parse correctly.
+    df = pd.read_csv("data.csv", comment="#")
     print(f"✅ Data loaded successfully! {len(df)} products available.")
 except FileNotFoundError:
     print("❌ Error: data.csv not found!")
